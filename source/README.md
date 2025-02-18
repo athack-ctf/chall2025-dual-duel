@@ -14,7 +14,7 @@ Simply run one of their implementations to see the random values obtained for ea
 ---
 
 ## Acknowledgments
-This CTF challenge was inspired by the vulnerability of Dual Elliptic Curve Pseudo-Random Number Generators, specifically the exploit discovered by Dan Shumlow and Niels Ferguson to obtain the internal state of the PRNG.
+This CTF challenge was inspired by the vulnerability of the NIST SP800-90 Dual Elliptic Curve Pseudo-Random Number Generator, specifically the exploit discovered by Dan Shumlow and Niels Ferguson to obtain the internal state of this PRNG. (http://rump2007.cr.yp.to/15-shumow.pdf)
 Special thanks to Anton Kueltz and David Hacker (dmhacker) for publishing their own proof of concept implementation to demonstrate this backdoor exploit on the Dual Elliptic Curve PRNG.
 (https://github.com/AntonKueltz/dual-ec-poc/tree/master)
 (https://github.com/dmhacker/dual-ec-drbg/tree/master)
