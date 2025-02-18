@@ -7,7 +7,7 @@
 
 ### **Step 2: Reverse Engineer Output Using Parameter Knowledge**
 - **Folder**: `2_dual_ec_backdoor_poc_repo_modified`
-- **Description**: After having understood how Dual EC PRNG with Shumlow-Ferguson vulnerability works, participants must reverse engineer the output to gain the current internal state of the PRNG.
+- **Description**: After having understood how a Dual EC PRNG containing the Shumlow-Ferguson backdoor works, participants must reverse engineer the observed 32-byte block output to gain the current internal state of the PRNG.
 
 ### **Step 3: Submit Internal State to Server**
 - **Folder**: `3_paste_internal_state_in_cmd`
