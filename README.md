@@ -1,6 +1,6 @@
 # Chall - Dual Duel
 
-> This Capture the Flag (CTF) challenge involves using the infamous backdoor exploit on the Dual Elliptic Curve Pseudo-Random Number Generator to predict the current internal state of the PRNG (i.e. Shumlow-Ferguson exploit).
+> This Capture the Flag (CTF) challenge involves using the infamous backdoor exploit on the NIST SP800-90 Dual Elliptic Curve Pseudo-Random Number Generator to predict the current internal state of the PRNG (i.e. Shumlow-Ferguson attack).
 
 ## Type
 
