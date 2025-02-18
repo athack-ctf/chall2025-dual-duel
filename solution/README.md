@@ -1,13 +1,13 @@
 ### **Step 1: Clone a Shumlow-Ferguson dual_ec_backdoor Proof of Concept GitHub Repo**
 - **Folder**: `1_dual_ec_backdoor_poc_repo`
-- **Description**: Anton Kueltz' proof of concept provides a simple way to test the Shumlow-Ferguson exploit in Python. Participants will need to search for one of these repos to hard-code the parameters where appropriate.
+- **Description**: Anton Kueltz' proof of concept provides a simple way to test the Shumlow-Ferguson exploit in Python. Participants will need to search for one of these repos and hard-code the parameters to understand how this cryptographic PRNG scheme works.
 ![alt text](1_dual_ec_backdoor_poc_repo/images/Anton_Kueltz_Default_Execution.png)
 ![alt text](1_dual_ec_backdoor_poc_repo/images/dmhacker_Default_Execution.png)
-
-### **Step 2: Hard-code Server's Parameters in Cloned Repo Files**
-- **Folder**: `2_dual_ec_backdoor_poc_repo_modified`
-- **Description**: Participants must hard-code the parameters they received from the server in the appropriate parts of the files. Once they run the modified code, they will obtain the internal state the server expects.
 ![alt text](2_dual_ec_backdoor_poc_repo_modified/images/Anton_Kueltz_Modded_Execution.png)
+
+### **Step 2: Reverse Engineer Output Using Parameter Knowledge**
+- **Folder**: `2_dual_ec_backdoor_poc_repo_modified`
+- **Description**: After having understood how Dual EC PRNG with Shumlow-Ferguson vulnerability works, participants must reverse engineer the output to gain the current internal state of the PRNG.
 
 ### **Step 3: Submit Internal State to Server**
 - **Folder**: `3_paste_internal_state_in_cmd`
