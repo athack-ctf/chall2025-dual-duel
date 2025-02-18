@@ -1,10 +1,5 @@
-The description of your challenge as seen by participants in CTFd. Try to make it feel within the theme
-of the event...
+Jester, during his research, dabbled with a few Pseudo-Random Number Generators.
 
----
-If your challenge is a multi-flag one (i.e., it consists of a sequence of sub-challenges each rewarded with
-its own flag), requiring a different description for each sub-challenge, then have your descriptions split as 
-done with this paragraph, and the next one.
+He became intrigued by this particular one. Can you figure out why?
 
----
-Obviously, for each sub-challenge, you should provide its flag value in [solution/FLAGS.md](solution/FLAGS.md).
+(run `nc host port` in a terminal)

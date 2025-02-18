@@ -1,33 +1,23 @@
-#########################################################################################################################
-# TODO: REPLACE THE CONTENT OF THIS FILE WITH YOUR OWN.
-#########################################################################################################################
-
-# Use the official Python base image
+# Use a lightweight Python base image
 FROM python:3.10-slim
 
-# Set the working directory
 WORKDIR /chall
 
-# Installing Flask
-RUN pip install Flask
+ENV FLAG_KEY="f54fc577f6fb94c7175b74c4a5e42064"
+ENV RUN_PORT=1337
 
-# Create the example chall (chall.py)
-RUN echo "from flask import Flask\n\
-chall = Flask(__name__)\n\
-\n\
-@chall.route('/')\n\
-def hello():\n\
-    return 'Hello @Hack 2025!'\n\
-\n\
-if __name__ == '__main__':\n\
-    chall.run(host='0.0.0.0')" > chall.py
+# Copy challenge files into the container
+COPY ./chall/dual_ec_prng_server.py .
 
-# Set environment vars
-ENV FLASK_APP=chall.py
-ENV FLASK_RUN_PORT=2025
+# Install dependencies
+RUN pip install --no-cache-dir pycryptodome
 
-# Expose the port that the chall will run on
-EXPOSE 2025
+# Create a non-root user for security
+RUN addgroup --system ctf && adduser --system --ingroup ctf ctf
+USER ctf
 
-# Run the chall
-CMD ["flask", "run", "--host=0.0.0.0"]
+# Expose the challenge port
+EXPOSE 1337
+
+# Set an environment variable for the flag key at runtime
+CMD ["python3", "dual_ec_prng_server.py"]
