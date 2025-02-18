@@ -1,6 +1,6 @@
 ### **Step 1: Clone a Shumlow-Ferguson dual_ec_backdoor Proof of Concept GitHub Repo**
 - **Folder**: `1_dual_ec_backdoor_poc_repo`
-- **Description**: Anton Kueltz' proof of concept provides a simple way to test the Shumlow-Ferguson exploit in Python. Participants will need to search for one of these repos and hard-code the parameters to understand how this cryptographic PRNG scheme works.
+- **Description**: Anton Kueltz' proof of concept provides a simple way to test the Shumlow-Ferguson exploit (http://rump2007.cr.yp.to/15-shumow.pdf) in Python. Participants will need to search for one of these repos and hard-code the parameters to understand how this cryptographic PRNG scheme works.
 ![alt text](1_dual_ec_backdoor_poc_repo/images/Anton_Kueltz_Default_Execution.png)
 ![alt text](1_dual_ec_backdoor_poc_repo/images/dmhacker_Default_Execution.png)
 ![alt text](2_dual_ec_backdoor_poc_repo_modified/images/Anton_Kueltz_Modded_Execution.png)
@@ -17,7 +17,7 @@
 ---
 
 ## Acknowledgments
-This CTF challenge was inspired by the vulnerability of Dual Elliptic Curve Pseudo-Random Number Generators, specifically the exploit discovered by Dan Shumlow and Niels Ferguson to obtain the internal state of the PRNG.
+90 Dual Elliptic Curve Pseudo-Random Number Generator, specifically the exploit discovered by Dan Shumlow and Niels Ferguson to obtain the internal state of this PRNG. (http://rump2007.cr.yp.to/15-shumow.pdf)
 Special thanks to Anton Kueltz and David Hacker (dmhacker) for publishing their own proof of concept implementation to demonstrate this backdoor exploit on the Dual Elliptic Curve PRNG.
 (https://github.com/AntonKueltz/dual-ec-poc/tree/master)
 (https://github.com/dmhacker/dual-ec-drbg/tree/master)
