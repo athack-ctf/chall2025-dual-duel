@@ -4,7 +4,7 @@
 
 ## Type
 
-- [] **OFF**line
+- [ ] **OFF**line
 - [X] **ON**line
 
 ## Designer
