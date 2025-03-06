@@ -19,7 +19,7 @@ p = 0xffffffff00000001000000000000000000000000ffffffffffffffffffffffff
 Observed a 32-byte block of output:
 128de40016ea477dff180dd4743aa080c12d5621852c3be4fe64ffae0433fd5b
 
-Given the above, what is the internal state of this PRNG?
+Given the above, what is the 32-byte hexadecimal internal state of this PRNG?
 """
 
 # Precomputed correct answer (hashed for security)
