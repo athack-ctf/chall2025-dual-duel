@@ -6,9 +6,8 @@ The server waits 5 seconds for input (i.e. the actual internal state of the Dual
 Since the parameters are hard-coded for this challenge, participants can run the netcat command once to take note of the parameters and then solve it offline before running it again to submit their answer.
 ![alt text](images/Server_Output.png)
 
-Please refer to Anton Kueltz or David Hacker's dual_ec_drbg proof of concepts to understand how to obtain the parameters (https://github.com/AntonKueltz/dual-ec-poc/tree/master & https://github.com/dmhacker/dual-ec-drbg/tree/master).
-Simply run one of their implementations to see the random values obtained for each parameter and use those values for the ctf, but more importantly, save the actual internal state value that their implementations will output. That internal state value will be the answer the server must receive from participants to yield the flag.
-![alt text](images/Anton_Kueltz_Default_Execution.png)
+Please refer to David Hacker's dual_ec_drbg proof of concept to understand how to obtain the parameters (https://github.com/dmhacker/dual-ec-drbg/tree/master).
+Simply run the implementation to see the random values obtained for each parameter and use those values for the ctf, but more importantly, save the actual internal state value that their implementations will output. That internal state value will be the answer the server must receive from participants to yield the flag.
 ![alt text](images/dmhacker_Default_Execution.png)
 
 ---
