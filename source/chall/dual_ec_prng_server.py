@@ -23,7 +23,7 @@ Given the above, what is the internal state of this PRNG?
 """
 
 # Precomputed correct answer (hashed for security)
-CORRECT_ANSWER_HASH = hashlib.sha256(b"8f6ee7d05b633f3c8943a9e76522d612492a62ecb44da3e6d9580629").hexdigest()
+CORRECT_ANSWER_HASH = hashlib.sha256(b"9582ed2ee056692edad44ca6ac51ed76afb38f91d04a85d738837f497b563df9").hexdigest()
 
 # Load the AES key from an environment variable (secure)
 KEY = bytes.fromhex(os.getenv("FLAG_KEY", "00000000000000000000000000000000"))  # Default to all zeros if missing
