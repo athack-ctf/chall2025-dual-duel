@@ -1,0 +1,25 @@
+name: "Dual Duel"
+author: "Alin"
+category: Crypto
+description: |
+  Jester, during his research, dabbled with a few Pseudo-Random Number Generators.
+
+  He became intrigued by this particular one. Can you figure out why?
+  
+value: 250
+
+type: standard
+
+flags:
+  - type: "static"
+    content: "ATHACKCTF{Sn0wden_walk3d_thr0ugh_the_Shumlow_Ferguson_backd0or}"
+    data: "case_insensitive"
+
+tags:
+ - tcp
+
+files:
+
+state: visible
+
+version: "0.1"
