@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  dual-duel:
+    build: .
+    container_name: athack-ctf/chall2025-dual-duel
+    ports:
+      - "1337:1337"
