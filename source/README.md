@@ -1,3 +1,5 @@
+# Running Thie Challenge
+
 Simply build the Dockerfile and run the Docker container to run the dual_ec_prng_server.py file.
 ![alt text](images/Docker_Setup.png)
 
