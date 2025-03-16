@@ -2,6 +2,6 @@ version: '3.8'
 services:
   dual-duel:
     image: athack-ctf/chall2025-dual-duel:latest
-    build: .
+    build: ./source
     ports:
     - 52004:1337
